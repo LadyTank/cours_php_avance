@@ -1,144 +1,110 @@
-<?php 
-
-require('class/Humain.php');
-require('class/Professionnel.php');
-require('class/Vehicule.php');
-require('class/Personnage.php');
-require('inc/functions.php');
-
-$moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
-$vehicule = new Vehicule("4", "250", "peugeot", "trop");
-$perso1 = new Personnage("Nono", "1", "5");
-$perso2 = new Personnage("Gigi", "1", "3");
-
-?> 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>POO - PHP Orienté Objet</title>
-</head>
-<body>
 
-    <div class="jumbotron">
-        <h1 class="display-4">POO - Programmation Orientée Objet</h1>
-        <p class="lead">PHP avancé</p>
-    </div><!-- fin jumbotron -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">  
+    
+    <link rel="stylesheet" href="css/style.css">
 
-    <div class="container">
+    <title>Cours PHP avancé - POO</title>
 
-        <div>
-            <h2><span>I.</span> Les classes</h2>
-            <p>Permettent d'organiser et hiérarchiser son code. Une classe va être comme un sac contenant des propriétés et des méthodes (données et fonctions).</p>
-            <p>"__construct" est une fonction qui va se lancer</p>
-        </div>
-
-        <?php 
+  </head>
+  <body class="bg-dark">
+  <div class="container-fluid p-0 m-0">
+        <!-- ========================================= -->
+        <!-- Navbar -->
+        <!-- ========================================= -->
+        <?php require("inc/nav.inc.php"); ?>
         
-        jevar_dump($moi);
-        // jevar_dump($moi->nom);
-        // jevar_dump($moi->prenom);
-        // jevar_dump($moi->dateNaissance);
-        // jevar_dump($moi->profession);
+    </div><!-- fin du container fluid -->
 
-        echo($moi->sePresenter());
-        
-        //autre mot clé pour les méthodes des objets "static". 
-        echo ($moi->direBonjour());
+    <!-- ========================================= -->
+    <!-- Contenu principal -->
+    <!-- ========================================= -->
 
-        //Particularité : ellles peuvent être appelées sans que l'objet ne soit instancié 
-        echo(Professionnel::direBonjour());
+    <div class="container bg-white p-5">
+        <div class="row jumbotron bg-light">
+            <div class="col-sm-12">
+                <h1 class="text-center">Cours PHP avancé - POO</h1>
+                <p class="lead text-center mt-4">Programmation Orientée Objet</p>
+            </div>
+        </div><!-- fin row -->
+        <!-- fin du jumbotron -->
 
-        //les méthodes static n'ont du coup pas accès à $this ou aux méthodes propriété de la classe
+        <hr>
 
-        $salutation = $moi->sePresenter();
-        echo($salutation);
+        <div class="row bg-light mt-4">
 
-        echo($vehicule->unVehicule());
+            <div class="col-12">
+                <h2><span>I.</span> L'objet</h2>
+               
+            </div><!-- fin col -->
 
-        ?>
+        </div><!-- fin row -->
 
-        <div>
-            <h2><span>II.</span> Exercice</h2>
+        <hr>
 
-            <div class="mx-auto my-5 p-4 w-50 alert alert-warning">
-                <?php
+        <div class="row bg-light mt-4">
 
-                    $tour = 0;
-                    while($perso2->pointsDeVie > 0 && $perso1->pointsDeVie > 0) {
-                        $tour++;
-                        echo "<strong>Tour numéro $tour <br></strong>";
-                        $perso1->seFaireAttaquer($perso2->stats);
-                        echo " - Il reste $perso1->pointsDeVie vies à $perso1->nomPerso<br>";
-                        $perso2->seFaireAttaquer($perso1->stats);
-                        echo " - Il reste $perso2->pointsDeVie vies à $perso2->nomPerso<br><br>";
-                        // $perso2->seFaireAttaquer($valeur_dommages);
-                        if ($perso1->pointsDeVie <= 0 ){
-                            echo "<p class=\"alert alert-danger mx-auto w-75 text-center\">$perso1->nomPerso n'a plus de vie ! Game Over</p>";
-                        } else if ($perso2->pointsDeVie <= 0 ){
-                            echo "<p class=\"alert alert-danger mx-auto w-75 text-center\">$perso2->nomPerso n'a plus de vie ! Game Over</p>";
-                        }
-                    }
+            <div class="col-sm-12 col-md-6">
+                <h2><span>II.</span> Les classes</h2>
+                <p>Permettent d'organiser et hiérarchiser son code. Une classe va être comme un sac contenant des propriétés et des méthodes (données et fonctions).</p>
+                <p>"__construct" est une fonction qui va se lancer</p>
+            </div><!-- fin col -->
 
-                ?>
-            </div><!-- fin exercice -->
-
-            <p>Généralement quand on va avoir besoin de récupérer ou modifier une valeur dans un objet on va avoir un système de méthode appelé "getter/setter" getters pour les méthodes qui vont retourner une valeur et setters pour celle qui vont les changer.</p>
-            <p>Ici, la classe Personnage avec des getters/setters vides : <br>
-                <code> class Personnage{</code><br>
-                <code>public $nom;</code><br>
-                <code>public $pdv;</code><br>
-                <code>public $attaque;</code><br>
-                <code>public function __construct($nom, $pdv, $attaque){</code><br>
-                <code>$this->nom = $nom;</code><br>
-                <code>$this->pdv = $pdv;</code><br>
-                <code>$this->attaque = $attaque;</code><br>
-                <code>}</code><br>
-                <code>public function set_pdv(){}</code><br>
-                <code>public function get_pdv(){}</code><br>
-                <code>public function set_attaque(){}</code><br>
-                <code>public function get_attaque(){}</code><br>
+            <div class="col-sm-12 col-md-6">
+                <h2><span>III.</span> Autoloader</h2>
+                <p>L'utilisation des classes nécessite qu'elles soient appelées systématiquement par le require. Pour éviter de le répéter pour chaque classes dont on a besoin on peut utiliser la fonction <code>autoloader</code>.</p>
+                <p>Un autoloader est une fonction qui va charger les classes nécessaires au fonctionnement du code en cours d'exécution</p>
+                
+                <p> Ici : la fonction pour les versions PHP antérieures à 7.4 :<br>
+                <code>function __autoload($class){</code>
+                    <code>require("class/$class.php");</code><br>
                 <code>}</code>
+                </p>
+
+                <p> Ici : la fonction pour les versions à partir de PHP 7.4 <br>
+                <code>function mon_loader($class){</code>
+                    <code>require("class/$class.php");</code><br>
+                <code>}</code>
+                </p>
+
+                <p>Appel de fonction :
+                <code>spl_autoload_register('mon_loader');</code>
+                </p>
+                <p>Cette méthode permet de gagner en productivité.</p>
+            </div><!-- fin col -->
+
+            <div class="col-sm-12 col-md-6">
             
-            </p>
+            </div><!-- fin col -->
 
-            <p>Les méthodes <code>get_</code> retournent la donnée <code>get_pdv</code> qui retourne les pdv</p>
-            <p>Les méthodes <code>set_</code> modifie :<br>
-
-                <code>public function set_pdv($pdv){</code><br>
-                <code>$this->pdv = $pdv;</code><br>
-                <code>}</code><br>
-                <code>public function get_pdv(){</code><br>
-                <code>return $this->pdv;</code><br>
-                <code>}</code>
-            </p>
-
-            <p>On peut alors changer la méthode <code>seFaireAttaquer()</code> :<br>
-                <code>public function seFaireAttaquer($valeur_dommages)</code><br>
-                <code>{</code><br>
-                <code>$this->set_pdv( $this->get_pdv() - $valeur_dommages);</code><br>
-                <code>}</code>
-            </p>
-
-            <p>Ajout des getters/setters pour <code>attaque()</code> : <br>
-                <code>public function set_attaque($attaque){</code><br>
-                <code>$this->attaque = $attaque;</code><br>
-                <code>}</code><br>
-                <code>public function get_attaque(){</code><br>
-                <code>return $this->attaque;</code><br>
-                <code>}</code><br>
-                <code>// renvoie la valeur de l'attaque public function attaquerQuelquUn( {</code><br>
-                <code>return $this->get_attaque();</code><br>  
-                <code>}</code>
-            </p>
+        </div><!-- fin row -->
 
 
-        </div><!-- fin exo -->
-    </div><!-- fin container principal -->
-</body>
+    </div> <!-- fin du container -->
+
+    <?php require("inc/footer.inc.php"); ?>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
