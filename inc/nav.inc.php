@@ -7,17 +7,28 @@
     <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
             <!-- <li class="nav-item">
-                <a class="nav-link active" href="introduction.php">Introduction</a>
+                <a class="nav-link active" href="humain/Humain.php">Humain</a>
             </li> -->
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Humain</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                    <a class="dropdown-item" href="../00-pages/01-page.php">01-page</a>
-                    <a class="dropdown-item" href="../00-pages/02-page.php">02-page</a>
-                    <a class="dropdown-item" href="../00-pages/03-page.php">03-page</a>
-                    <a class="dropdown-item" href="../00-pages/04-page.php">04-page</a>
+                    <a class="dropdown-item" href="humain/index_humain.php">Index Humain</a>
                 </div>
-            </li>  -->
+            </li> 
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Véhicule</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a class="dropdown-item" href="vehicule/index_vehicule.php">Index Véhicule</a>
+                </div>
+            </li> 
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personnage</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a class="dropdown-item" href="personnage/index_personnage.php">Index Personnage</a>
+                </div>
+            </li> 
 
             
         </ul>

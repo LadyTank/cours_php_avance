@@ -1,13 +1,10 @@
 <?php 
 
-require('class/Humain.php');
-require('class/Professionnel.php');
-require('class/Vehicule.php');
-require('class/Personnage.php');
-require('inc/functions.php');
+require('../inc/functions.php');
 
-$moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
-$vehicule = new Vehicule("4", "250", "peugeot", "trop");
+require('class/Autoloader.php');
+Autoloader::register();
+
 $perso1 = new Personnage("Nono", "1", "5");
 $perso2 = new Personnage("Gigi", "1", "3");
 
@@ -26,45 +23,14 @@ $perso2 = new Personnage("Gigi", "1", "3");
 <body>
 
     <div class="jumbotron">
-        <h1 class="display-4">POO - Programmation Orientée Objet</h1>
-        <p class="lead">PHP avancé</p>
+        <h1 class="display-4">POO - Personnage</h1>
+        <p class="lead">Exercice</p>
     </div><!-- fin jumbotron -->
 
     <div class="container">
 
         <div>
-            <h2><span>I.</span> Les classes</h2>
-            <p>Permettent d'organiser et hiérarchiser son code. Une classe va être comme un sac contenant des propriétés et des méthodes (données et fonctions).</p>
-            <p>"__construct" est une fonction qui va se lancer</p>
-        </div>
-
-        <?php 
-        
-        jevar_dump($moi);
-        // jevar_dump($moi->nom);
-        // jevar_dump($moi->prenom);
-        // jevar_dump($moi->dateNaissance);
-        // jevar_dump($moi->profession);
-
-        echo($moi->sePresenter());
-        
-        //autre mot clé pour les méthodes des objets "static". 
-        echo ($moi->direBonjour());
-
-        //Particularité : ellles peuvent être appelées sans que l'objet ne soit instancié 
-        echo(Professionnel::direBonjour());
-
-        //les méthodes static n'ont du coup pas accès à $this ou aux méthodes propriété de la classe
-
-        $salutation = $moi->sePresenter();
-        echo($salutation);
-
-        echo($vehicule->unVehicule());
-
-        ?>
-
-        <div>
-            <h2><span>II.</span> Exercice</h2>
+            <h2><span>I.</span> Exercice</h2>
 
             <div class="mx-auto my-5 p-4 w-50 alert alert-warning">
                 <?php
@@ -88,6 +54,9 @@ $perso2 = new Personnage("Gigi", "1", "3");
                 ?>
             </div><!-- fin exercice -->
 
+        <hr>
+
+        <div>
             <p>Généralement quand on va avoir besoin de récupérer ou modifier une valeur dans un objet on va avoir un système de méthode appelé "getter/setter" getters pour les méthodes qui vont retourner une valeur et setters pour celle qui vont les changer.</p>
             <p>Ici, la classe Personnage avec des getters/setters vides : <br>
                 <code> class Personnage{</code><br>
@@ -106,10 +75,10 @@ $perso2 = new Personnage("Gigi", "1", "3");
                 <code>}</code>
             
             </p>
-
+            
             <p>Les méthodes <code>get_</code> retournent la donnée <code>get_pdv</code> qui retourne les pdv</p>
             <p>Les méthodes <code>set_</code> modifie :<br>
-
+            
                 <code>public function set_pdv($pdv){</code><br>
                 <code>$this->pdv = $pdv;</code><br>
                 <code>}</code><br>
@@ -117,14 +86,14 @@ $perso2 = new Personnage("Gigi", "1", "3");
                 <code>return $this->pdv;</code><br>
                 <code>}</code>
             </p>
-
+            
             <p>On peut alors changer la méthode <code>seFaireAttaquer()</code> :<br>
                 <code>public function seFaireAttaquer($valeur_dommages)</code><br>
                 <code>{</code><br>
                 <code>$this->set_pdv( $this->get_pdv() - $valeur_dommages);</code><br>
                 <code>}</code>
             </p>
-
+            
             <p>Ajout des getters/setters pour <code>attaque()</code> : <br>
                 <code>public function set_attaque($attaque){</code><br>
                 <code>$this->attaque = $attaque;</code><br>
@@ -136,7 +105,8 @@ $perso2 = new Personnage("Gigi", "1", "3");
                 <code>return $this->get_attaque();</code><br>  
                 <code>}</code>
             </p>
-
+            
+        </div>
 
         </div><!-- fin exo -->
     </div><!-- fin container principal -->

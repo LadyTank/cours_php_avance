@@ -1,8 +1,9 @@
 <?php 
 
-require('class/Autoloader.php');
+require('../inc/functions.php');
 
-spl_autoload_register('mon_loader');
+require('class/Autoloader.php');
+Autoloader::register();
 
 $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
 

@@ -83,11 +83,21 @@
                 <p>Cette méthode permet de gagner en productivité.</p>
             </div><!-- fin col -->
 
+        </div><!-- fin row -->
+
+        <hr>
+
+        <div class="row bg-light mt-4">
+            <h2><span>IV.</span> Getter</h2>
+            <div class="col-sm-12 col-md-6">
+                
+            </div><!-- fin col -->
+
+            <h2><span>V.</span> Setter</h2>
             <div class="col-sm-12 col-md-6">
             
             </div><!-- fin col -->
-
-        </div><!-- fin row -->
+        </div>
 
 
     </div> <!-- fin du container -->
