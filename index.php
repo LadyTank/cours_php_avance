@@ -45,7 +45,7 @@
 
             <div class="col-12">
                 <h2><span>I.</span> L'objet</h2>
-               
+                <p></p>
             </div><!-- fin col -->
 
         </div><!-- fin row -->

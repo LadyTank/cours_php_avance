@@ -1,5 +1,6 @@
 <?php 
 
+require('../class/Debug.php');
 
 
 require('class/Autoloader.php');

@@ -20,7 +20,7 @@ class Chat
         $this->set_race($race);
     }
 
-    private function set_prenom($prenom)
+    private function set_prenom($prenom) // set_prenom et __prenom = même chose
     {
         // le nom doit être une chaine
         // entre 3 et 20 caractères

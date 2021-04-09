@@ -1,12 +1,14 @@
 <?php 
 
-require('../inc/functions.php');
+require('../class/Debug.php');
 
 require('class/Autoloader.php');
 Autoloader::register();
 
 $perso1 = new Personnage("Nono", "1", "5");
 $perso2 = new Personnage("Gigi", "1", "3");
+Debug::monDebug($perso1);
+Debug::afficherTableau($perso2);
 
 ?> 
 
@@ -50,6 +52,8 @@ $perso2 = new Personnage("Gigi", "1", "3");
                             echo "<p class=\"alert alert-danger mx-auto w-75 text-center\">$perso2->nomPerso n'a plus de vie ! Game Over</p>";
                         }
                     }
+
+                    
 
                 ?>
             </div><!-- fin exercice -->
