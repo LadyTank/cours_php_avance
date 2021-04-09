@@ -2,7 +2,7 @@
 
 require('../class/Debug.php');
 
-require('class/Autoloader.php');
+require('../class/Autoloader.php');
 Autoloader::register();
 $vehicule = new Vehicule("4", "250", "peugeot", "trop");
 

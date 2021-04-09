@@ -45,9 +45,54 @@
 
             <div class="col-12">
                 <h2><span>I.</span> L'objet</h2>
-                <p></p>
+                <p>Alors que la programmation procédurale permet d'agir sur les données par l'intermédiaires de fonctions/opérations, la Programmation Orientée Objet (POO) permet de créer des objets qui contiennent à la fois des données et des fonctions.</p>
+                <p>La POO favorise une structure de code clair, moins répétitif.</p>
+                <p>Un objet est l'instance d'une classe. <code>cf.II. Les classes</code></p>
+                <p>Lorsqu'un objet est créé il hérite de toutes les propriétés et comportements de la class.</p>
+                <p>Ci-dessous 2 tableaux pour mieux comprendre :</p>
+            </div><!-- fin col -->
+        </div><!-- fin row -->
+
+        <div class="row bg-light mt-4 pt-3">
+            <div class="col-6">
+                    <table class="table table-info table-striped  text-center">
+                        <thead>
+                            <th>
+                                <td>Class</td>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Fruit</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div><!-- fin col -->
 
+            <div class="col-6">
+                <table class="table table-info table-striped  text-center">
+                    <thead>
+                        <th>
+                            <td>Objets</td>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Pomme</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Banane</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Mangue</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div><!-- fin row -->
 
         <hr>
@@ -57,7 +102,7 @@
             <div class="col-sm-12 col-md-6">
                 <h2><span>II.</span> Les classes</h2>
                 <p>Permettent d'organiser et hiérarchiser son code. Une classe va être comme un sac contenant des propriétés et des méthodes (données et fonctions).</p>
-                <p>"__construct" est une fonction qui va se lancer</p>
+                <p>"__construct" est une fonction qui va se lancer.</p>
             </div><!-- fin col -->
 
             <div class="col-sm-12 col-md-6">

@@ -2,7 +2,7 @@
 
 require('../class/Debug.php');
 
-require('class/Autoloader.php');
+require('../class/Autoloader.php');
 Autoloader::register();
 
 $perso1 = new Personnage("Nono", "1", "5");

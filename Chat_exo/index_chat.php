@@ -3,7 +3,7 @@
 require('../class/Debug.php');
 
 
-require('class/Autoloader.php');
+require('../class/Autoloader.php');
 Autoloader::register();
 // spl_autoload_register(["Autoloader","autoload"]);
 // require('class/Professionnel.php');
