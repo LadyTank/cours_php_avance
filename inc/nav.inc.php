@@ -33,7 +33,14 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chat</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                    <a class="dropdown-item" href="Chat_exo/index_chat.php">Index Chat</a>
+                    <a class="dropdown-item" href="exo_chat/index_chat.php">Index Chat</a>
+                </div>
+            </li> 
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PDO</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a class="dropdown-item" href="pdo/index_pdo.php">Index PDO</a>
                 </div>
             </li> 
 
