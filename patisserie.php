@@ -1,4 +1,10 @@
-<?php ?> 
+<?php
+
+require('ParisBrest.php');
+$pb1 = new ParisBrest();
+
+
+?> 
 <!doctype html>
 <html lang="fr">
   <head>
@@ -15,7 +21,7 @@
     
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Cours PHP 7 - </title>
+    <title>POO - Patisserie</title>
 
   </head>
   <body class="bg-dark">
@@ -34,7 +40,7 @@
     <div class="container bg-white p-5">
         <div class="row jumbotron bg-light">
             <div class="col-sm-12">
-                <h1 class="text-center">Cours PHP 7 - </h1>
+                <h1 class="text-center">Cours PHP 7 - Pâtisserie</h1>
                 <p class="lead text-center mt-4"></p>
             </div>
         </div><!-- fin row -->
@@ -46,7 +52,13 @@
 
             <div class="col-sm-12 col-md-6">
                 <h2><span>I.</span></h2>
-               
+               <?php 
+
+                echo "<div class = \"alert alert-success\">";
+                var_dump($pb1);
+                echo "</div>";
+                $pb1->cuire();
+               ?> 
             </div><!-- fin col -->
 
             <div class="col-sm-12 col-md-6">

@@ -137,6 +137,10 @@
             <div class="col-sm-12 col-md-6">
                 <h2><span>IV.</span> Getter</h2>
             </div><!-- fin col -->
+
+            <div class="col-sm-12 col-md-6">
+                <h2><span>V.</span> Setter</h2>
+            </div><!-- fin col -->
             
             
         </div><!-- fin row -->
@@ -151,7 +155,7 @@
             <div class="col-sm-12 col-md-6">    
                         
                 <p>Les classes, bien que très pratiques, peuvent poser problème dans le cadre d'une collaboration en groupe ou de l'utilisation de librairies externes. En effet, il peut y avoir conflit si 2 classes ont été nommées de la même façon.</p>
-                <p>Pour pallier ce problème, a été mis en place des "namespaces". Utilisable dans de nombreux langages, un namespace permet d'indiquer qu'une classe fait partie d'un package. Plus précisémment, on sépare des éléments du code en les plaçant des "espaces" (ou répertoires) différents afin d'éviter les conflits.</p>
+                <p>Pour pallier ce problème, a été mis en place des "namespaces". Utilisable dans de nombreux langages, un namespace permet d'indiquer qu'une classe fait partie d'un package. Plus précisémment, on sépare des éléments du code en les plaçant dans des "espaces" (ou répertoires) différents afin d'éviter les conflits.</p>
                 <p>Les namespaces ont aussi un autre rôle qui consiste à créer des alias (des noms alternatifs) plus simples pour les éléments qui ont des noms trop longs ou trop compliqués.</p>
             </div><!-- fin col -->
 
