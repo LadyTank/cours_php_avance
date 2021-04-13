@@ -1,6 +1,7 @@
 <?php 
 
 require('../class/Debug.php');
+use \Debugage\Debug;
 
 require('../class/Autoloader.php');
 Autoloader::register();

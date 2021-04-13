@@ -1,5 +1,7 @@
 <?php
 
+namespace Debugage;
+
 /**
  * Class de débug
  * @author KSVaz 
