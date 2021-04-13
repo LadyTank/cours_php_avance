@@ -4,7 +4,7 @@ class ParisBrest
 {
     public function __construct()
     {
-        echo "le gateau est bien gras !";
+        echo "Le gateau est bien gras !";
     }
 
     public function cuire()

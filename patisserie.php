@@ -1,7 +1,6 @@
 <?php
 
 require('ParisBrest.php');
-$pb1 = new ParisBrest();
 
 
 ?> 
@@ -53,6 +52,8 @@ $pb1 = new ParisBrest();
             <div class="col-sm-12 col-md-6">
                 <h2><span>I.</span></h2>
                <?php 
+
+                $pb1 = new ParisBrest();
 
                 echo "<div class = \"alert alert-success\">";
                 var_dump($pb1);
