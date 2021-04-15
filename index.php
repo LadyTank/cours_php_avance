@@ -183,7 +183,7 @@
             <div class="col-12">
                 <h2><span>VI.</span> Les traits</h2> 
                 <p class="alert alert-warning w-50">
-                    <a href="https://grafikart.fr/tutoriels/traits-php-530#autoplay">Cours sur les traits</a>
+                    <a href="https://grafikart.fr/tutoriels/traits-php-530#autoplay" target="blank">Cours sur les traits</a>
                 </p>
             </div> <!-- fin col -->
             <div class="col-sm-12 col-md-6">    
