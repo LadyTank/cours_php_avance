@@ -1,7 +1,7 @@
 <?php 
 
 require('../class/Debug.php');
-use \Debugage\Debug;
+
 
 require('../class/Autoloader.php');
 Autoloader::register();
@@ -31,9 +31,9 @@ $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
 
         <?php 
         
-        Debug::monDebug($moi);
-        Debug::afficherTableau($moi);
-        Debug::afficherPropriete($moi);
+        Outils\Debug::monDebug($moi);
+        Outils\Debug::afficherTableau($moi);
+        Outils\Debug::afficherPropriete($moi);
         // jevar_dump($moi->nom);
         // jevar_dump($moi->prenom);
         // jevar_dump($moi->dateNaissance);

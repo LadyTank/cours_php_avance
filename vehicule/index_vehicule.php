@@ -31,7 +31,7 @@ $vehicule = new Vehicule("4", "250", "peugeot", "trop");
         <?php 
 
         echo($vehicule->unVehicule());
-        Debug::monDebug($vehicule);
+        Outils\Debug::monDebug($vehicule);
 
         ?>
 

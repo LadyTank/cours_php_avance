@@ -1,6 +1,6 @@
 <?php
 
-namespace Debugage;
+namespace Outils;
 
 /**
  * Class de débug

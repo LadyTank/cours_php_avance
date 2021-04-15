@@ -32,7 +32,7 @@ Autoloader::register();
             $mypdo = new myPDO('mysql:host=localhost;dbname=entreprise', 'root', '');
             // $request = $mypdo->requeteSelect( "SELECT * FROM employes");
             $requete = $mypdo->requeteSelect("employes");
-            Debug::afficherTableau($requete);
+            Outils\Debug::afficherTableau($requete);
 
             //requête UPDATE
             //Debug::afficherTableau($request);

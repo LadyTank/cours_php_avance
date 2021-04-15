@@ -7,8 +7,8 @@ Autoloader::register();
 
 $perso1 = new Personnage("Nono", "1", "5");
 $perso2 = new Personnage("Gigi", "1", "3");
-Debug::monDebug($perso1);
-Debug::afficherTableau($perso2);
+Outils\Debug::monDebug($perso1);
+Outils\Debug::afficherTableau($perso2);
 
 ?> 
 

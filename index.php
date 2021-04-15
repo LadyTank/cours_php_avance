@@ -162,6 +162,7 @@
             <div class="col-sm-12 col-md-6">
                 <p>Pour définir un namespace on utilise le mot-clé namespace suivi du nom de celui-ci. Le nom peut être choisi de la même façon qu'une fonction (lettres, chiffres et caractères souligné).</p>
                 <p>Exemple : <code>namespace monEspaceDeNom;</code></p>
+                <p>Pour appeler la class : <code>monEspaceDeNom\maClass::maFonction($mavariable)</code> </p>
             </div><!-- fin col -->
 
         </div><!-- fin row -->
