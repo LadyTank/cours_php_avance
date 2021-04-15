@@ -175,6 +175,8 @@
             </div><!-- fin col -->
 
         </div><!-- fin row -->
+
+        <hr>
         
         <div class="row bg-light mt-4">
 
