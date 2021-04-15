@@ -1,6 +1,6 @@
 <?php 
 
-require('../class/Debug.php');
+use Outils\Debug;
 
 require('../class/Autoloader.php');
 Autoloader::register();
@@ -31,7 +31,7 @@ $vehicule = new Vehicule("4", "250", "peugeot", "trop");
         <?php 
 
         echo($vehicule->unVehicule());
-        Outils\Debug::monDebug($vehicule);
+        Debug::monDebug($vehicule);
 
         ?>
 

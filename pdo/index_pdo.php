@@ -1,6 +1,6 @@
 <?php 
 
-require('../class/Debug.php');
+use Outils\Debug;
 
 require('../class/Autoloader.php');
 Autoloader::register();
@@ -32,7 +32,7 @@ Autoloader::register();
             $mypdo = new myPDO('mysql:host=localhost;dbname=entreprise', 'root', '');
             // $request = $mypdo->requeteSelect( "SELECT * FROM employes");
             $requete = $mypdo->requeteSelect("employes");
-            Outils\Debug::afficherTableau($requete);
+            Debug::afficherTableau($requete);
 
             //requête UPDATE
             //Debug::afficherTableau($request);
