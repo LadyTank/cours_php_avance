@@ -134,12 +134,19 @@
 
         <div class="row bg-light mt-4">
             
-            <div class="col-sm-12 col-md-6">
-                <h2><span>IV.</span> Getter</h2>
-            </div><!-- fin col -->
-
-            <div class="col-sm-12 col-md-6">
-                <h2><span>V.</span> Setter</h2>
+            <div class="col-12">
+                <h2><span>IV.</span> Getter et Setter</h2>
+                <p>La programmation orientée objet permet de spécifier la visibilité des méthodes et propriétés d'une classe. Dans le cas des propriétés, il est très peu recommandable de leur donner une visiblité publique car de cette manière il devient possible de les modifier sans qu'aucun contrôle ne soit effectué sur les valeurs.</p>
+                <p>Il est donc préférable de leur accorder une visiblité limitée : private ou protected.</p>
+                <p>Pour avoir accès à ces propriétés et ainsi pouvoir leur attribuer des valeurs, on utilise les méthodes get et set.</p>
+                <p>Get va donner l'accès à la propriété tandis que set va permettre de lui attribuer une valeur. Par exemple :</p>
+                <p><code>getMaFonction($titre){<br>
+                    return $this->titre; <br>
+                    }</code></p>
+                <p><code>setMaFonction($titre){<br>
+                    $this->titre = $titre; <br>
+                }</code></p>
+                <p class="alert alert-warning">Pour plus de détails, voir l'exercice Chat ou cours PHP Orienté Objet de Régis, article.php</p>
             </div><!-- fin col -->
             
             
@@ -150,7 +157,7 @@
         <div class="row bg-light mt-4">
 
             <div class="col-12">
-                <h2><span>VI.</span> Les namespaces / espaces de noms</h2> 
+                <h2><span>V.</span> Les namespaces / espaces de noms</h2> 
             </div> <!-- fin col -->
             <div class="col-sm-12 col-md-6">    
                         
