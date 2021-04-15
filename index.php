@@ -183,12 +183,19 @@
                 <p class="alert alert-warning w-50">
                     <a href="https://grafikart.fr/tutoriels/traits-php-530#autoplay">Cours sur les traits</a>
                 </p>
+            </div> <!-- fin col -->
+            <div class="col-sm-12 col-md-6">    
+                
                 <p>Les traits permettent de pallier les défauts du système d'héritage.</p>
                 <p>En effet, l'héritage des classes se fait uniquement de manière verticale, de l'enfant vers le parent. Ce mode de fonctionnement peut avoir ses limites dans le cas où on veut ajouter des fonctionnalités communes à d'autres classes sans avoir à répéter le code.</p>
                 <p>Prenons l'exemple d'une classe Parente qu'on appelle <code>Vehicule</code>.</p>
                 <p>Cette cette classe à deux classes enfant <code>Moto</code> et <code>Voiture</code>. Ces classes enfant vont hériter des propriétés de <code>Vehicule</code> et auront elles même des propriétés qui leurs seront propres par ex: <code>$roue = 4;</code></p>
                 <p>Dans le cas où nous voulons implémenter un système de véhicule électrique, on se retrouve face à un problème puisque les voitures comme les motos peuvent être électriques. Pour éviter de répéter des propriétés et comme la classe <code>Vehicule</code> n'a pas la propriété électrique. Nous créons un <code>trait</code>.</p>
-                <p>Le trait sont des sous-classes abstraites qui permettent de greffer des méthodes (fonctions) et propriétés à des classes.</p>
+                <p>Le trait sont des sous-classes abstraites qui permettent de greffer des méthodes (fonctions) et propriétés à des classes.</p>     
+                
+            </div><!-- fin col -->
+
+            <div class="col-sm-12 col-md-6">
                 <p>Un trait se déclare comme suit :<br>
                 <code>trait Rechargeable {<br>
                 public $energy = 100;<br>
@@ -198,15 +205,7 @@
                 }<br></code></p>
                 <p>Un trait va définir un comportement.</p>
                 <p>Il suffit ensuite de greffer le trait dans la ou les classes qui ont besoin de cette fonctionnalité : <br>
-                <code>use Rechargeable;</code></p>
-            </div> <!-- fin col -->
-            <div class="col-sm-12 col-md-6">    
-                        
-                
-            </div><!-- fin col -->
-
-            <div class="col-sm-12 col-md-6">
-                
+                <code>use Rechargeable;</code></p>    
             </div><!-- fin col -->
 
         </div><!-- fin row -->
