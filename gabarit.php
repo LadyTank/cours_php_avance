@@ -1,7 +1,8 @@
-<?php ?> 
+<?php ?>
 <!doctype html>
 <html lang="fr">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,20 +12,21 @@
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">  
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Cours PHP 7 - </title>
 
-  </head>
-  <body class="bg-dark">
-  <div class="container-fluid p-0 m-0">
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid p-0 m-0">
         <!-- ========================================= -->
         <!-- Navbar -->
         <!-- ========================================= -->
         <?php require("inc/nav.inc.php"); ?>
-        
+
     </div><!-- fin du container fluid -->
 
     <!-- ========================================= -->
@@ -46,7 +48,7 @@
 
             <div class="col-sm-12 col-md-6">
                 <h2><span>I.</span></h2>
-               
+
             </div><!-- fin col -->
 
             <div class="col-sm-12 col-md-6">
@@ -61,11 +63,11 @@
 
             <div class="col-sm-12 col-md-6">
                 <h2><span>III.</span></h2>
-               
+
             </div><!-- fin col -->
 
             <div class="col-sm-12 col-md-6">
-            
+
             </div><!-- fin col -->
 
         </div><!-- fin row -->
@@ -87,5 +89,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

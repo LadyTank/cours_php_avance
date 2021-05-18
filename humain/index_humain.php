@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use Outils\Debug;
 
@@ -8,10 +8,11 @@ Autoloader::register();
 
 $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +21,7 @@ $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>POO - PHP Orienté Objet</title>
 </head>
+
 <body>
 
     <div class="jumbotron">
@@ -29,8 +31,8 @@ $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
 
     <div class="container">
 
-        <?php 
-        
+        <?php
+
         Debug::monDebug($moi);
         Debug::afficherTableau($moi);
         Debug::afficherPropriete($moi);
@@ -39,23 +41,24 @@ $moi = new Humain("Semedo", "Katia", "1989-06-18", "Développeuse web");
         // jevar_dump($moi->dateNaissance);
         // jevar_dump($moi->profession);
 
-        echo($moi->sePresenter());
-        
+        echo ($moi->sePresenter());
+
         //autre mot clé pour les méthodes des objets "static". 
         echo ($moi->direBonjour());
 
         //Particularité : ellles peuvent être appelées sans que l'objet ne soit instancié 
-        echo(Professionnel::direBonjour());
+        echo (Professionnel::direBonjour());
 
         //les méthodes static n'ont du coup pas accès à $this ou aux méthodes propriété de la classe
 
         $salutation = $moi->sePresenter();
-        echo($salutation);
+        echo ($salutation);
 
         ?>
 
-      
-            
+
+
     </div><!-- fin container principal -->
 </body>
+
 </html>

@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-class ParisBrest 
+class ParisBrest
 {
     public function __construct()
     {
@@ -13,12 +13,12 @@ class ParisBrest
         //Sans cela, il faudra concaténer et déclarer la variable avant la foction
     }
 
-/* Différence entre public private et protected */
+    /* Différence entre public private et protected */
     //public : accessible partout
     //private : accessible uniquement par la propriété elle-même / Peut être accessible par getters et setters
     //protected : accessible par les desncendants de la classe / par les héritiers
 
-   /* PUBLIC PRIVATE ET PROTECTED */
+    /* PUBLIC PRIVATE ET PROTECTED */
     // public : accessible partout (ne protège pas les propriétés)
     // private : accessible uniquement par la propriété elle-même / Peut être accessible par getters et setters
     // protected : accessible par les descendants de la classe / par les héritiers / Peut être accessible par getters et setters

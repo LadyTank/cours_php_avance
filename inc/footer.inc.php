@@ -1,16 +1,16 @@
 <footer class="footer mt-auto pt-4 bg-dark">
   <div class="container">
     <p class="text-white text-center">Cours PHP 7 - Date :
-        <?php
-            setlocale(LC_ALL, 'fr_FR');
-            echo strftime("%A %e %B %Y");
+      <?php
+      setlocale(LC_ALL, 'fr_FR');
+      echo strftime("%A %e %B %Y");
 
-            echo ' - ';
+      echo ' - ';
 
-            date_default_timezone_set("Europe/Paris");
-            echo date('H:i:s');
-        ?>
-        </p>
+      date_default_timezone_set("Europe/Paris");
+      echo date('H:i:s');
+      ?>
+    </p>
   </div>
 </footer>
 
